@@ -46,6 +46,9 @@
             return {
                 tickets1: [],
             },
+            create(){
+                this.getJson()
+            }
             methods {
                 async getJson(){
                     const response = await fetch("tickets1.json")
